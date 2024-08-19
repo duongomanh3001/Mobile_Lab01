@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Challenge 02</title>
+</head>
+
+<body>
+    <h1>Kết quả tính toán BMI của Mark và John (2)</h1>
+    <script>
+        let massMark1 = 78;
+        let heightMark1 = 1.69;
+        let massJohn1 = 92;
+        let heightJohn1 = 1.95; // Chiều cao của John (m)
+
+        // Tính toán BMI
+        let BMIMark1 = massMark1 / (heightMark1 ** 2);
+        let BMIJohn1 = massJohn1 / (heightJohn1 ** 2);
+
+        // So sánh BMI và in ra kết quả
+        if (BMIMark1 > BMIJohn1) {
+            console.log(`Mark's BMI (${BMIMark1.toFixed(1)}) cao hơn John's (${BMIJohn1.toFixed(1)})!`);
+        } else if (BMIJohn1 > BMIMark1) {
+            console.log(`John's BMI (${BMIJohn1.toFixed(1)}) cao hơn Mark's (${BMIMark1.toFixed(1)})!`);
+        } else {
+            console.log(`Mark và John có cùng chỉ số BMI (${BMIMark1.toFixed(1)})!`);
+        }
+
+        // Test Data 2
+        let massMark2 = 95; // Khối lượng của Mark (kg)
+        let heightMark2 = 1.88; // Chiều cao của Mark (m)
+        let massJohn2 = 85; // Khối lượng của John (kg)
+        let heightJohn2 = 1.76; // Chiều cao của John (m)
+
+        // Tính toán BMI
+        let BMIMark2 = massMark2 / (heightMark2 ** 2);
+        let BMIJohn2 = massJohn2 / (heightJohn2 ** 2);
+
+        // So sánh BMI và in ra kết quả
+        if (BMIMark2 > BMIJohn2) {
+            console.log(`Mark's BMI (${BMIMark2.toFixed(1)}) cao hơn John's (${BMIJohn2.toFixed(1)})!`);
+        } else if (BMIJohn2 > BMIMark2) {
+            console.log(`John's BMI (${BMIJohn2.toFixed(1)}) cao hơn Mark's (${BMIMark2.toFixed(1)})!`);
+        } else {
+            console.log(`Mark và John có cùng chỉ số BMI (${BMIMark2.toFixed(1)})!`);
+        }
+    </script>
+</body>
+
+</html>

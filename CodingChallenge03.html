@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Challenge 03</title>
+</head>
+
+<body>
+    <h1>Tính điểm trung bình cao nhất Dolphins và Koalas</h1>
+    <script>
+        // Test Data 1
+        let dolphinsScores1 = [96, 108, 89];
+        let koalasScores1 = [88, 91, 110];
+
+        // Tính điểm trung bình cho mỗi đội
+        let averageDolphins1 = (dolphinsScores1[0] + dolphinsScores1[1] + dolphinsScores1[2]) / 3;
+        let averageKoalas1 = (koalasScores1[0] + koalasScores1[1] + koalasScores1[2]) / 3;
+
+        console.log(`Data 1 - Dolphins Average: ${averageDolphins1}, Koalas Average: ${averageKoalas1}`);
+
+        // So sánh điểm trung bình để xác định đội chiến thắng
+        if (averageDolphins1 > averageKoalas1) {
+            console.log("Dolphins thắng!");
+        } else if (averageKoalas1 > averageDolphins1) {
+            console.log("Koalas thắng!");
+        } else {
+            console.log("Hòa!");
+        }
+
+        // Bonus 1: Thêm yêu cầu về điểm tối thiểu
+        let dolphinsScoresBonus1 = [97, 112, 101];
+        let koalasScoresBonus1 = [109, 95, 123];
+
+        let averageDolphinsBonus1 = (dolphinsScoresBonus1[0] + dolphinsScoresBonus1[1] + dolphinsScoresBonus1[2]) / 3;
+        let averageKoalasBonus1 = (koalasScoresBonus1[0] + koalasScoresBonus1[1] + koalasScoresBonus1[2]) / 3;
+
+        console.log(`Bonus 1 - Dolphins Average: ${averageDolphinsBonus1}, Koalas Average: ${averageKoalasBonus1}`);
+
+        if (averageDolphinsBonus1 > averageKoalasBonus1 && averageDolphinsBonus1 >= 100) {
+            console.log("Dolphins giành cúp với số điểm trên 100!");
+        } else if (averageKoalasBonus1 > averageDolphinsBonus1 && averageKoalasBonus1 >= 100) {
+            console.log("Koalas giành cúp với số điểm trên 100!");
+        } else if (averageDolphinsBonus1 === averageKoalasBonus1 && averageDolphinsBonus1 >= 100 && averageKoalasBonus1 >= 100) {
+            console.log("Hòa với kết quả 2 đội ghi 100 điểm!");
+        } else {
+            console.log("Không đội nào thắng vì không đáp ứng điểm tối thiểu.");
+        }
+
+        // Bonus 2: Áp dụng quy tắc điểm tối thiểu cho cả trường hợp hòa
+        let dolphinsScoresBonus2 = [97, 112, 101];
+        let koalasScoresBonus2 = [109, 95, 106];
+
+        let averageDolphinsBonus2 = (dolphinsScoresBonus2[0] + dolphinsScoresBonus2[1] + dolphinsScoresBonus2[2]) / 3;
+        let averageKoalasBonus2 = (koalasScoresBonus2[0] + koalasScoresBonus2[1] + koalasScoresBonus2[2]) / 3;
+
+        console.log(`Bonus 2 - Dolphins Average: ${averageDolphinsBonus2}, Koalas Average: ${averageKoalasBonus2}`);
+
+        if (averageDolphinsBonus2 > averageKoalasBonus2 && averageDolphinsBonus2 >= 100) {
+            console.log("Dolphins giành cúp với số điểm trên 100!");
+        } else if (averageKoalasBonus2 > averageDolphinsBonus2 && averageKoalasBonus2 >= 100) {
+            console.log("Koalas giành cúp với số điểm trên 100!");
+        } else if (averageDolphinsBonus2 === averageKoalasBonus2 && averageDolphinsBonus2 >= 100 && averageKoalasBonus2 >= 100) {
+            console.log("Hòa với kết quả 2 đội ghi 100 điểm!");
+        } else {
+            console.log("Không đội nào thắng vì không đáp ứng điểm tối thiểu.");
+        }
+    </script>
+</body>
+
+</html>
